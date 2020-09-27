@@ -113,8 +113,7 @@ for later:
 * Then, load the rest of the classes asynchronously, by applying the following pattern:
 
 ```html
-<link rel="preload" href="styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<noscript><link rel="stylesheet" href="styles.css"></noscript>
+<link rel="stylesheet" href="/path/to/my.css" media="print" onload="this.media='all'">
 ```
 
 This is not the standard way of loading CSS. Here's how it works:
